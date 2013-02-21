@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="hello">Hello World, LabDemoActivity!</string>
+    <string name="app_name">LabDemo</string>
+    <string name="myhello">adf %1$s adfas %2$d</string>
+    <string name="openinputeditors">Go to Input Editors</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_font_test">Fonts Test Activity</string>
+    <string name="story_text">Chìm tàu Saigon Queen ở Sri Lanka, 18 người thoát chết, 4 người mất tích 31/10/2012 8:58\n\n(TNO) Sáng nay (31.10), Trung tâm tìm kiếm cứu nạn hàng hải Việt Nam (VMRCC) cho biết, 18 thuyền viên trên tàu Saigon Queen đã được cứu sống khi tàu chìm ở vùng biển Sri Lanka. Hiện còn 4 thuyền viên đang mất tích.\n\nCác thuyền viên được cứu là đại phó Nguyễn Quốc Tám (34 tuổi), đại phó 2 Lê Đình Phương (28 tuổi), đại phó 3 Võ Minh Tuấn (29 tuổi), thợ máy Dương Văn Tường (28 tuổi), thợ máy Hoàng Văn Thanh (32 tuổi), thợ máy Quách Văn Phú (28 tuổi), thợ máy Ngô Thanh Quang (25 tuổi), thợ máy Nguyễn Trung Kiên (24 tuổi), thủy thủ Nghiêm Văn Sinh (26 tuổi), thủy thủ Vũ Văn Thơ (26 tuổi), thủy thủ Đinh Minh Hải (24 tuổi), thủy thủ Vũ Văn Khánh (27 tuổi), thủy thủ Trần Văn Bảo (27 tuổi), thủy thủ Lê Thanh Dũng (25 tuổi), thợ cá Nguyễn Văn Ước (25 tuổi), bếp trưởng Hồ Văn Toàn (46 tuổi), nhân viên phục vụ Lê Ngọc Duy (31 tuổi), thợ điện Nguyễn Văn Huân (46 tuổi).\n\nHiện các thuyền viên này đã được tàu Pacific Skipper (hô hiệu P3UW4, IMO: 8405804; MMSI: 209000876, mang cờ Cộng hòa Síp) cứu, và tàu này đang hành trình đi Bangladesh. Dự kiến đến ngày 3.11, tàu sẽ cập cảng Mongna của Bangladesh. Phần lớn các thuyền viên đều còn khỏe mạnh, chỉ có 1 người bị thương nhẹ.\n\nBốn người mất tích là thuyền trưởng Nguyễn Minh Luân (41 tuổi), máy trưởng Hoàng Văn Ban (58 tuổi), thủy thủ trưởng Trần Văn De (54 tuổi), thợ máy Phạm Phú Hữu (28 tuổi).\n\nTrước đó, tàu Pacific Skipper đã cứu được 3 người và giữ liên lạc được với 16 người trên phao cứu hộ. Tuy nhiên, trong lúc di chuyển từ phao cứu sinh lên tàu Pacific Skipper, thuyền trưởng Nguyễn Minh Luân bị rơi xuống biển, mất tích.\n\nTàu Pacific Skipper mang cờ Cộng hòa Síp đã cứu được 18 thuyền viên tàu Saigon Queen.\n\nTrước đó, tàu Saigon Queen bị chìm lúc 11 giờ 30 phút ngày 30.10 ở toạ độ 07&#8211;59N; 084&#8211;07E trên vùng biển Sri Lanka khi đang chở hàng hành trình từ Myanmar đi Ấn Độ.\n\nTrước khi bị chìm, tàu Saigon Queen, hô hiệu 3WLR, số IMO 9364083 (dài 102.79 mét, rộng 17.028 mét, GT=4074) thuộc Công ty cổ phần vận tải biển Sài Gòn, với 22 thuyền viên đã phát báo nạn khẩn cấp tại vùng biển Sri Lanka. Vị trí bị nạn có toạ độ 07&#8211;59.84N; 084&#8211;11.910E. Hàng trên tàu bị xô lệch, phải chằng buộc lại.\n\nNgay sau khi nhận thông tin báo nạn từ tàu Saigon Queen, VMRCC đã gấp rút liên lạc với tàu nhưng mọi thông tin đều không thể kết nối được với Saigon Queen. Khu vực tàu Saigon Queen hoạt động thời tiết rất xấu, đang chịu ảnh hưởng của bão.\n\nVMRCC đã phối hợp với Công ty TNHH một thành viên thông tin điện tử hàng hải Việt Nam phát thông báo hàng hải khẩn cấp, phối hợp với lực lượng tìm kiếm cứu nạn SRI LANKA (MRCC COLOMBO); US COAST GUARD; MRCC CHENAI; các tàu thuyền hoạt động trong khu vực triển khai ngay các hoạt động cứu nạn thuyền viên tàu Saigon Queen.\n\nNgoài ra, VMRCC cũng đã thông tin vụ việc đến từng tàu, yêu cầu các tàu hoạt động gần khu vực tàu Saigon Queen mất liên lạc triển khai các biện pháp cảnh giới, phát hiện dấu vết của tàu Saigon Queen.\n\nHiện nay, hoạt động tìm kiếm cứu nạn 4 thuyền viên mất tích tàu Saigon Queen đang được các lực lượng chức năng khẩn trương, nỗ lực triển khai thực hiện ở mức độ cao nhất.</string>
+    <string-array name="array_fonts">
+        <item >thanhnien_regular.ttf</item>
+        <item >thanhnien_italic.ttf</item>
+        <item >thanhnien_bold.ttf</item>
+    </string-array>
+    <string-array name="array_multiLines">
+        <item >1.0</item>
+        <item >1.1</item>
+        <item >1.2</item>
+        <item >1.3</item>
+        <item >1.4</item>
+        <item >1.5</item>
+        <item >1.6</item>
+        <item >1.7</item>
+        <item >1.8</item>
+        <item >1.9</item>
+        <item >2.0</item>
+    </string-array>
+    <string name="toast_title">LabDemo</string>
+    
+    <!-- Animations -->
+    <string name="title_crossfade">Simple Crossfade</string>
+    <string name="title_card_flip">Card Flip</string>
+    <string name="title_screen_slide">Screen Slide</string>
+    <string name="title_zoom">Zoom</string>
+    <string name="title_layout_changes">Layout Changes</string>
+    <string name="title_template_step">Step %1$d : Lorem Ipsum</string>
+
+    <!-- Animations Actions -->
+    <string name="action_toggle">Toggle indicator</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_info">Photo info</string>
+    <string name="action_photo">View photo</string>
+
+    <!-- Animations Messages -->
+    <string name="message_empty_layout_changes">Add an item above to get started.</string>
+    <string name="message_zoom_touch_expand">Touch a photo to expand it.</string>
+
+    <!-- Animations Accessibility-only descriptions -->
+    <string name="description_image_1">Image 1</string>
+    <string name="description_image_2">Image 2</string>
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+
+    <!-- Animations Other strings -->
+    <string name="card_back_title">Angry Red Android</string>
+    <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
+    <string name="lorem_ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.]]></string>
+    
+</resources>
