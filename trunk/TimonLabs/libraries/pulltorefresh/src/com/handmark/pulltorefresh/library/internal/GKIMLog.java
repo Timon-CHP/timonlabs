@@ -20,7 +20,7 @@ import android.util.Log;
  */
 public class GKIMLog {
 	
-	public static final boolean DEBUG_ON = true;
+	public static final boolean DEBUG_ON = false;
 	private static final boolean DEBUG_LOGFILE = false;
 	private static final String TAG = "TimonLabs";
 	private static final String LABS_LOGFILE = "Timonlog.txt";

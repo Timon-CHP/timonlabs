@@ -23,7 +23,6 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -35,6 +34,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.handmark.pulltorefresh.library.internal.FlipLoadingLayout;
+import com.handmark.pulltorefresh.library.internal.GKIMLog;
 import com.handmark.pulltorefresh.library.internal.LoadingLayout;
 import com.handmark.pulltorefresh.library.internal.RotateLoadingLayout;
 import com.handmark.pulltorefresh.library.internal.Utils;
@@ -50,7 +50,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
 	static final boolean USE_HW_LAYERS = false;
 
-	static final String LOG_TAG = "PullToRefresh";
+	static final String LOG_TAG = "PullToRefreshBase";
 
 	static final float FRICTION = 2.0f;
 
@@ -128,9 +128,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
 	@Override
 	public void addView(View child, int index, ViewGroup.LayoutParams params) {
-		if (DEBUG) {
-			Log.d(LOG_TAG, "addView: " + child.getClass().getSimpleName());
-		}
+		GKIMLog.lf(getContext(), 0, LOG_TAG + "=>addView: " + child.getClass().getSimpleName());
 
 		final T refreshableView = getRefreshableView();
 
@@ -421,9 +419,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	@Override
 	public final void setMode(Mode mode) {
 		if (mode != mMode) {
-			if (DEBUG) {
-				Log.d(LOG_TAG, "Setting mode to: " + mode);
-			}
+			GKIMLog.lf(getContext(), 0, LOG_TAG + "=>setMode to: " + mode);
 			mMode = mode;
 			updateUIForMode();
 		}
@@ -538,10 +534,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
 	final void setState(State state, final boolean... params) {
 		mState = state;
-		if (DEBUG) {
-			Log.d(LOG_TAG, "State: " + mState.name());
-		}
-
+		GKIMLog.lf(getContext(), 0, LOG_TAG + "=>setState: " + mState.name());
 		switch (mState) {
 			case RESET:
 				onReset();
@@ -842,9 +835,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
 	@Override
 	protected final void onSizeChanged(int w, int h, int oldw, int oldh) {
-		if (DEBUG) {
-			Log.d(LOG_TAG, String.format("onSizeChanged. W: %d, H: %d", w, h));
-		}
+		GKIMLog.lf(getContext(), 0, LOG_TAG + String.format("=>onSizeChanged. W: %d, H: %d", w, h));
 
 		super.onSizeChanged(w, h, oldw, oldh);
 
@@ -912,9 +903,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 				break;
 		}
 
-		if (DEBUG) {
-			Log.d(LOG_TAG, String.format("Setting Padding. L: %d, T: %d, R: %d, B: %d", pLeft, pTop, pRight, pBottom));
-		}
+		GKIMLog.lf(getContext(), 1, LOG_TAG + String.format("=>Setting Padding. L: %d, T: %d, R: %d, B: %d", pLeft, pTop, pRight, pBottom));
 		setPadding(pLeft, pTop, pRight, pBottom);
 	}
 
@@ -946,9 +935,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	 * @param value - New Scroll value
 	 */
 	protected final void setHeaderScroll(int value) {
-		if (DEBUG) {
-			Log.d(LOG_TAG, "setHeaderScroll: " + value);
-		}
+		GKIMLog.lf(getContext(), 0, LOG_TAG + "=>setHeaderScroll: " + value);
 
 		// Clamp value to with pull scroll range
 		final int maximumPullScroll = getMaximumPullScroll();

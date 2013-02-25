@@ -18,7 +18,6 @@ package com.handmark.pulltorefresh.library;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,11 +32,12 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 
 import com.handmark.pulltorefresh.library.internal.EmptyViewMethodAccessor;
+import com.handmark.pulltorefresh.library.internal.GKIMLog;
 import com.handmark.pulltorefresh.library.internal.IndicatorLayout;
 
 public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extends PullToRefreshBase<T> implements
 		OnScrollListener {
-
+	static final String LOG_TAG = "PullToRefreshAdapterViewBase";
 	private static FrameLayout.LayoutParams convertEmptyViewLayoutParams(ViewGroup.LayoutParams lp) {
 		FrameLayout.LayoutParams newLp = null;
 
@@ -102,10 +102,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 	public final void onScroll(final AbsListView view, final int firstVisibleItem, final int visibleItemCount,
 			final int totalItemCount) {
 
-		if (DEBUG) {
-			Log.d(LOG_TAG, "First Visible: " + firstVisibleItem + ". Visible Count: " + visibleItemCount
+		GKIMLog.lf(getContext(), 0, LOG_TAG + "=>First Visible: " + firstVisibleItem + ". Visible Count: " + visibleItemCount
 					+ ". Total Items:" + totalItemCount);
-		}
 
 		/**
 		 * Set whether the Last Item is Visible. lastVisibleItemIndex is a
@@ -374,9 +372,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 		final Adapter adapter = mRefreshableView.getAdapter();
 
 		if (null == adapter || adapter.isEmpty()) {
-			if (DEBUG) {
-				Log.d(LOG_TAG, "isFirstItemVisible. Empty View.");
-			}
+			GKIMLog.lf(getContext(), 1, LOG_TAG + "=>isFirstItemVisible. Empty View.");
 			return true;
 
 		} else {
@@ -403,18 +399,14 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 		final Adapter adapter = mRefreshableView.getAdapter();
 
 		if (null == adapter || adapter.isEmpty()) {
-			if (DEBUG) {
-				Log.d(LOG_TAG, "isLastItemVisible. Empty View.");
-			}
+			GKIMLog.lf(getContext(), 1, LOG_TAG + "=>isLastItemVisible. Empty View.");
 			return true;
 		} else {
 			final int lastItemPosition = mRefreshableView.getCount() - 1;
 			final int lastVisiblePosition = mRefreshableView.getLastVisiblePosition();
 
-			if (DEBUG) {
-				Log.d(LOG_TAG, "isLastItemVisible. Last Item Position: " + lastItemPosition + " Last Visible Pos: "
+			GKIMLog.lf(getContext(), 0, LOG_TAG + "=>isLastItemVisible. Last Item Position: " + lastItemPosition + " Last Visible Pos: "
 						+ lastVisiblePosition);
-			}
 
 			/**
 			 * This check should really just be: lastVisiblePosition ==

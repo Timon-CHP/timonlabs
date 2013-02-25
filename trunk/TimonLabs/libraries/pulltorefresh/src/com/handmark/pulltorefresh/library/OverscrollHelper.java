@@ -16,11 +16,11 @@
 package com.handmark.pulltorefresh.library;
 
 import android.annotation.TargetApi;
-import android.util.Log;
 import android.view.View;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
+import com.handmark.pulltorefresh.library.internal.GKIMLog;
 
 @TargetApi(9)
 public final class OverscrollHelper {
@@ -128,11 +128,9 @@ public final class OverscrollHelper {
 			if (mode.permitsPullToRefresh() && !isTouchEvent && deltaValue != 0) {
 				final int newScrollValue = (deltaValue + scrollValue);
 
-				if (PullToRefreshBase.DEBUG) {
-					Log.d(LOG_TAG, "OverScroll. DeltaX: " + deltaX + ", ScrollX: " + scrollX + ", DeltaY: " + deltaY
+				GKIMLog.lf(null, 1, LOG_TAG + "=>OverScroll. DeltaX: " + deltaX + ", ScrollX: " + scrollX + ", DeltaY: " + deltaY
 							+ ", ScrollY: " + scrollY + ", NewY: " + newScrollValue + ", ScrollRange: " + scrollRange
 							+ ", CurrentScroll: " + currentScrollValue);
-				}
 
 				if (newScrollValue < (0 - fuzzyThreshold)) {
 					// Check the mode supports the overscroll direction, and
