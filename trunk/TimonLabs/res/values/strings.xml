@@ -8,5 +8,6 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="content_pulltorefresh">Pull To Refresh on ScrollView</string>
+    <string name="btn_second_frag">Download asset Now</string>
 
 </resources>
