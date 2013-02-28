@@ -25,6 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".gpservices.GPDownloaderService"></service>
+        <receiver android:name=".gpservices.GPAlarmReceiver"></receiver>
     </application>
 
 </manifest>
