@@ -333,10 +333,10 @@ public class MainActivity extends FragmentActivity {
 			final MediaPlayer mp = new MediaPlayer();
 			if (afd == null) {
 				GKIMLog.lf(null, 0, TAG + "=> Asset file is null");
-				if (btnDownload != null) {
-					btnDownload.setVisibility(View.VISIBLE);
-					btnDownload.setOnClickListener(mOnClickToDownloadAsset);
-				}
+//				if (btnDownload != null) {
+//					btnDownload.setVisibility(View.VISIBLE);
+//					btnDownload.setOnClickListener(mOnClickToDownloadAsset);
+//				}
 
 			} else {
 				GKIMLog.lf(null, 0, TAG + "=> Asset file is existed");
