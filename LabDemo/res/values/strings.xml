@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="hello">Hello World, LabDemoActivity!</string>
-    <string name="app_name">LabDemo</string>
+    <string name="app_name">Timon Labs</string>
     <string name="myhello">adf %1$s adfas %2$d</string>
     <string name="openinputeditors">Go to Input Editors</string>
     <string name="hello_world">Hello world!</string>
