@@ -79,4 +79,8 @@ public class LabDemoActivity extends Activity {
 			startActivity(mAnimationIntent);
 		}
 	}
+	
+	public int addMethodForTest(int a, int b) {
+		return ((a) + (b));
+	}
 }
