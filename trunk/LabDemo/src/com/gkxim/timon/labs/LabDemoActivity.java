@@ -86,7 +86,19 @@ public class LabDemoActivity extends Activity {
 						ShareButtonActivity.class);
 			}
 			startActivity(mSocialAuth_ShareButtonIntent);
-		}
+		} else if (view.getId() == R.id.btn_open_sharebar) {
+			if (mSocialAuth_ShareBarIntent == null) {
+				mSocialAuth_ShareBarIntent = new Intent(this,
+						ShareBarActivity.class);
+			}
+			startActivity(mSocialAuth_ShareBarIntent);
+		}  else if (view.getId() == R.id.btn_open_sharecustom) {
+			if (mSocialAuth_ShareCustomIntent == null) {
+				mSocialAuth_ShareCustomIntent = new Intent(this,
+						ShareBarActivity.class);
+			}
+			startActivity(mSocialAuth_ShareCustomIntent);
+		}  
 	}
 	
 	public int addMethodForTest(int a, int b) {
