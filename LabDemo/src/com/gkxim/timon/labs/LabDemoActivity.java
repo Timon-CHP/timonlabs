@@ -21,6 +21,9 @@ public class LabDemoActivity extends Activity {
 	private Intent mTestFontIntent;
 	private Intent mDrawbleBreakIntent;
 	private Intent mAnimationIntent;
+	private Intent mSocialAuth_ShareButtonIntent;
+	private Intent mSocialAuth_ShareBarIntent;
+	private Intent mSocialAuth_ShareCustomIntent;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -77,6 +80,12 @@ public class LabDemoActivity extends Activity {
 						AnimationMainActivity.class);
 			}
 			startActivity(mAnimationIntent);
+		} else if (view.getId() == R.id.btn_open_sharebutton) {
+			if (mSocialAuth_ShareButtonIntent == null) {
+				mSocialAuth_ShareButtonIntent = new Intent(this,
+						ShareButtonActivity.class);
+			}
+			startActivity(mSocialAuth_ShareButtonIntent);
 		}
 	}
 	

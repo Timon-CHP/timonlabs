@@ -75,14 +75,14 @@
             android:layout_height="wrap_content"
             android:onClick="clickMe"
             android:text="Test Font" />
-
+
         <Button
             android:id="@+id/btn_open_drawablebreak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="clickMe"
             android:text="Drawable break from XML alias" />
-
+
         <Button
             android:id="@+id/btn_open_animation"
             android:layout_width="match_parent"
@@ -90,6 +90,26 @@
             android:onClick="clickMe"
             android:text="Animation show" />
 
+        <Button
+            android:id="@+id/btn_open_sharebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickMe"
+            android:text="SocialAuth - Share Button" />
+
+        <Button
+            android:id="@+id/btn_open_sharebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickMe"
+            android:text="SocialAuth - Share Bar" />
+
+        <Button
+            android:id="@+id/btn_open_sharecustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickMe"
+            android:text="SocialAuth - Share Button" />
     </LinearLayout>
 
 </ScrollView>
