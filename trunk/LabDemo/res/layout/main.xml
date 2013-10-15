@@ -14,34 +14,6 @@
             android:layout_height="wrap_content"
             android:text="@string/hello" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <EditText
-                android:id="@+id/edname"
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.34"/>
-
-            <Button
-                android:id="@+id/btnchange"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="clickMe"
-                android:text="Button">
-                <requestFocus/>
-             </Button>
-
-            <TextView
-                android:id="@+id/txthello"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="á"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-        </LinearLayout>
-
         <Button
             android:id="@+id/btn_load_layout"
             android:layout_width="match_parent"

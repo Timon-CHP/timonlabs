@@ -8,12 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class LabDemoActivity extends Activity {
 	public static final String LOG_TAG = "LABS";
-	private int mIndex = 0;
 	private Intent mXMLLayoutIntent;
 	private Intent mInputEditorsIntent;
 	private Intent mFingerPaintIntent;
@@ -35,13 +32,7 @@ public class LabDemoActivity extends Activity {
 	}
 
 	public void clickMe(View view) {
-		if (view.getId() == R.id.btnchange) {
-			String text = ((EditText) findViewById(R.id.edname)).getText()
-					.toString();
-			mIndex++;
-			((TextView) findViewById(R.id.txthello)).setText(String.format(
-					getResources().getString(R.string.myhello), text, mIndex));
-		} else if (view.getId() == R.id.btn_load_layout) {
+		if (view.getId() == R.id.btn_load_layout) {
 			if (mXMLLayoutIntent == null) {
 				mXMLLayoutIntent = new Intent(this, MyXMLLayoutActivity.class);
 			}
