@@ -24,6 +24,7 @@ public class LabDemoActivity extends Activity {
 	private Intent mSocialAuth_ShareButtonIntent;
 	private Intent mSocialAuth_ShareBarIntent;
 	private Intent mSocialAuth_ShareCustomIntent;
+	private Intent mUSBConnectIntent;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -98,6 +99,12 @@ public class LabDemoActivity extends Activity {
 						ShareBarActivity.class);
 			}
 			startActivity(mSocialAuth_ShareCustomIntent);
+		}  else if (view.getId() == R.id.btn_open_usbdevice) {
+			if (mUSBConnectIntent == null) {
+				mUSBConnectIntent = new Intent(this,
+						USBConnectActivity.class);
+			}
+			startActivity(mUSBConnectIntent);
 		}  
 	}
 	
