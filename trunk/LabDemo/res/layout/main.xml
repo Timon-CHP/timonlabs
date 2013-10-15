@@ -23,14 +23,16 @@
                 android:id="@+id/edname"
                 android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.34" />
+                android:layout_weight="0.34"/>
 
             <Button
                 android:id="@+id/btnchange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="clickMe"
-                android:text="Button" />
+                android:text="Button">
+                <requestFocus/>
+             </Button>
 
             <TextView
                 android:id="@+id/txthello"
@@ -110,6 +112,12 @@
             android:layout_height="wrap_content"
             android:onClick="clickMe"
             android:text="SocialAuth - Share Button" />
+        <Button
+            android:id="@+id/btn_open_usbdevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickMe"
+            android:text="See USB connect" />
     </LinearLayout>
 
 </ScrollView>
