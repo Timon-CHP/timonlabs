@@ -47,8 +47,6 @@
         <activity android:name="AnimationMainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -91,7 +89,10 @@
         </activity>
         <activity android:configChanges="keyboardHidden|orientation" android:name="ShareButtonActivity"></activity>
         <activity android:configChanges="keyboardHidden|orientation" android:name="ShareBarActivity"></activity>
-        <activity android:name="USBConnectActivity"></activity>
+        <activity android:name=".androider.USBConnectActivity"></activity>
+        <activity android:name="AndroiderSamplesActivity"></activity>
+        <activity android:name=".androider.BlurBitmapActivity"></activity>
+        <activity android:name=".androider.ConvolutionBlurBitmapActivity"></activity>
     </application>
 
 </manifest>

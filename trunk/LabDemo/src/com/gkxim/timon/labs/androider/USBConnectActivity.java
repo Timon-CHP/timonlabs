@@ -1,7 +1,9 @@
-package com.gkxim.timon.labs;
+package com.gkxim.timon.labs.androider;
 
 import java.util.HashMap;
 import java.util.Iterator;
+
+import com.gkxim.timon.labs.R;
 
 import android.hardware.usb.UsbConstants;
 import android.hardware.usb.UsbDevice;
@@ -22,7 +24,7 @@ public class USBConnectActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.usbconnectactivity);
+		setContentView(R.layout.activity_usbconnect);
 		btnCheck = (Button) findViewById(R.id.check);
 		textInfo = (TextView) findViewById(R.id.info);
 		btnCheck.setOnClickListener(new OnClickListener() {
