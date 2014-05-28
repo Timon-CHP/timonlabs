@@ -93,6 +93,12 @@
         <activity android:name="AndroiderSamplesActivity"></activity>
         <activity android:name=".androider.BlurBitmapActivity"></activity>
         <activity android:name=".androider.ConvolutionBlurBitmapActivity"></activity>
-    </application>
+		<activity
+				android:name=".FullWebView"
+				android:label="FullLinkWebView"/>
+		<activity
+				android:name=".androider.AnimationViewActivity"
+				android:label="AnimationView By Touch Path"/>
+	</application>
 
 </manifest>

@@ -91,7 +91,12 @@
             android:layout_height="wrap_content"
             android:onClick="clickMe"
             android:text="Androider&apos;s Samples" />
-
+		<Button
+				android:id="@+id/btn_open_fulllinkwebview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:onClick="clickMe"
+				android:text="Open Full Link WebView" />
     </LinearLayout>
 
 </ScrollView>
